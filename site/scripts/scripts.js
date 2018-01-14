@@ -65,7 +65,7 @@ function getContent() {
 // HELP FORMATTING (Uses OP-API) //
 
 function getHelp() {
-    var get_fullURL = "http://op-api.now.sh/" + "content/59df998b1538bcd9a186aa36";
+    var get_fullURL = window.location.href + "content/59df998b1538bcd9a186aa36";
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", get_fullURL, false);
     xhttp.setRequestHeader("Content-type", "x-www-form-urlencoded");
