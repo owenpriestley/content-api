@@ -1,0 +1,74 @@
+<head>
+    <link rel="stylesheet" href="/resetForms.css">
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/scripts/scripts.js"></script>
+    <script src="/scripts/markdown.min.js"></script>
+
+</head>
+<html>
+
+<div id="top-container">
+    <div id='left'>
+        <div id='post'>
+            <h1 class='post'>&#x1F4EE Post</h1>
+            <label for='title'>Title</label>
+            </br>
+            <input style='border-color: #fca89d; width:165px;' type='text' id='title'>
+            </br>
+            </br>
+        </div>
+
+        <div id='postBody'>
+            <label for='body'>Body</label>
+            </br>
+            <textarea id="body" cols="40" rows="5" placeholder="  Format your content using Markdown"></textarea>
+            </br>
+            <button type="submit" id="postButt" onclick="addContent()" method="post">SEND</button>
+            <button type="submit" id="helpButt" onclick="getHelp()">FORMATTING</button>
+            <!-- OPTIONAL HELP BUTTON -->
+            <!-- <button type="submit" id="helpButt">HELP</button> -->
+
+        </div>
+        </br>
+    </div>
+
+    <div id='right'>
+        <h1 class='get'>&#x1F48C Get</h1>
+        </br>
+        <label for='id'>ID</label>
+        <input type='text' id='id'>
+        <button type="submit" id="getButt" onclick="getContent()" method="get">GO</button>
+        <p class='eg'>eg: 59df5aabb56561b0921f9c2d</p>
+    </div>
+</div>
+</div>
+<div id="bottom-container">
+    <div id="bottom-content">
+        <div>
+            <p class="success"></p>
+        </div>
+        <div>
+            <h2 class="responseTitle"></h2>
+            <div id="responseBody"></div>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div id="helpBox" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Use Markdown formatting for content -
+                <a href="https://beegit.com/markdown-cheat-sheet">here's a cheat sheet.</a>
+            </p>
+        </div>
+
+    </div>
+
+
+</html>

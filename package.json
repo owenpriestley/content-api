@@ -1,0 +1,20 @@
+{
+  "name": "contentdesign",
+  "version": "0.0.1",
+  "description": "Content API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Owen Priestley",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.31",
+    "now": "^8.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
